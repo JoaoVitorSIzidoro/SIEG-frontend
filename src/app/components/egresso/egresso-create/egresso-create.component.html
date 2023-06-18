@@ -1,0 +1,59 @@
+<mat-card>
+    <mat-card-title>Novo Egresso</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" 
+                [(ngModel)]="egresso.name" name="name">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Data Nascimento" 
+                [(ngModel)]="egresso.data_nascimento" name="data_nascimento">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Entrada na Universidade"
+            [(ngModel)]="egresso.entrada_ufu"name="entrada_ufu">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Saida na Universidade"
+            [(ngModel)]="egresso.saida_ufu"name="saida_ufu">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Tempo de Curso"
+            [(ngModel)]="egresso.tempo_curso"name="tempo_curso">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Tempo de Formado"
+            [(ngModel)]="egresso.tempo_formado"name="tempo_formado">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Obteve bolsas"
+            [(ngModel)]="egresso.bolsas"name="bolsas">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Estagios na Area"
+            [(ngModel)]="egresso.estagios_area"name="estagios_area">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Trabalha na area atualmente?"
+            [(ngModel)]="egresso.trabalha_area_atualmente"name="trabalha_area_atualmente">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Já passou por quantas empresas do ramo?"
+            [(ngModel)]="egresso.quantos_empregos_area"name="quantos_empregos_area">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Conte mais sobre suas experiencias profissionais:"
+            [(ngModel)]="egresso.experiencia_profissional"name="experiencia_profissional">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="createEgresso()" color="primary">
+        Salvar
+    </button>
+    
+    <button mat-raised-button (click)="cancel()" >
+        Cancelar
+    </button>
+</mat-card> 
+
+
+
