@@ -23,6 +23,8 @@ export class EgressoRead2Component implements AfterViewInit {
     this.dataSource = new EgressoRead2DataSource();
   }
 
+
+
   ngAfterViewInit(): void {
     this.dataSource.sort = this.sort;
     this.dataSource.paginator = this.paginator;
