@@ -30,6 +30,8 @@ import { EgressoRead2Component } from './components/egresso/egresso-read2/egress
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { IntegrationTestComponent } from './tests/integration-test/integration-test.component';
+
 
 
 
@@ -44,7 +46,8 @@ import { MatSortModule } from '@angular/material/sort';
     EgressoCreateComponent,
     EgressoShowComponent,
     EgressoReadComponent,
-    EgressoRead2Component
+    EgressoRead2Component,
+    IntegrationTestComponent
   ],
   imports: [
     BrowserModule,
@@ -63,6 +66,7 @@ import { MatSortModule } from '@angular/material/sort';
     MatTableModule,
     MatPaginatorModule,
     MatSortModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
